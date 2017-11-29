@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.anil.myapplication">
-
+    <uses-permission android:name="android.permission.INTERNET" />
     <uses-sdk
         android:minSdkVersion="8"
         android:targetSdkVersion="15" />
@@ -18,6 +18,13 @@
             </intent-filter>
         </activity>
         <activity android:name=".NewActivity" >
+        </activity>
+
+
+    <activity android:name=".NewActivity2" >
+    </activity>
+
+        <activity android:name=".NextprevActivity" >
         </activity>
     </application>
 

@@ -4,37 +4,39 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
-    <Button
-        android:id="@+id/verbal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="224dp"
-        android:text="Verbal" />
 
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/verbal"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginBottom="94dp"
-        android:layout_marginEnd="68dp"
-        android:layout_marginRight="68dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="GRE CHEETSHEET" />
+    <TextView
+            android:id="@+id/text_id"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:capitalize="characters"
+            android:text="GRE CHEATSHEET"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textColorHighlight="@android:color/primary_text_dark"
+            android:textSize="30dp"
+            android:layout_marginRight="19dp" android:layout_marginEnd="19dp"
+            android:layout_alignBaseline="@+id/nextprev" android:layout_alignBottom="@+id/nextprev"
+            android:layout_alignParentRight="true" android:layout_alignParentEnd="true"/>
+    <Button
+            android:id="@+id/verbal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Verbal" android:layout_centerVertical="true" android:layout_centerHorizontal="true"/>
+
 
     <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/verbal"
-        android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/verbal"
-        android:layout_marginBottom="45dp"
-        android:text="Quant" />
+            android:id="@+id/quant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quantitative" android:layout_below="@+id/verbal" android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"/>
+
+    <Button
+            android:id="@+id/nextprev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VerbalNextPrev" android:layout_above="@+id/verbal" android:layout_alignRight="@+id/text_id"
+            android:layout_alignEnd="@+id/text_id"/>
+
 
 </RelativeLayout>
