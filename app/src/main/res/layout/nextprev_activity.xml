@@ -4,31 +4,43 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" >
 
-    <TextView android:id="@+id/textName"
-              android:layout_width="fill_parent"
-              android:layout_height="wrap_content"
-
-    />
 
 
     <Button
-            android:id="@+id/next"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="NEXT"
-            android:layout_alignBaseline="@+id/quant" android:layout_alignBottom="@+id/quant"
-            android:layout_alignRight="@+id/text_id" android:layout_alignEnd="@+id/text_id"
-            android:layout_marginRight="18dp" android:layout_marginEnd="18dp"/>
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/prev"
+        android:layout_alignBottom="@+id/prev"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="38dp"
+        android:layout_marginStart="38dp"
+        android:text="NEXT" />
 
 
     <Button
-            android:id="@+id/prev"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="36dp"
-            android:text="Prev"
-            android:layout_alignParentBottom="true" android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" android:layout_marginLeft="28dp" android:layout_marginStart="28dp"/>
+        android:id="@+id/prev"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="17dp"
+        android:layout_marginLeft="103dp"
+        android:layout_marginStart="103dp"
+        android:layout_toEndOf="@+id/next"
+        android:layout_toRightOf="@+id/next"
+        android:text="Prev" />
+
+    <TextView
+        android:id="@+id/changetext"
+
+        android:layout_centerVertical="true"
+
+
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:text="@string/Strings1" />
 
 
 </RelativeLayout>

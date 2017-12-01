@@ -2,41 +2,69 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+    android:layout_height="match_parent"
+    android:background="@drawable/bckgrnd">
 
 
     <TextView
-            android:id="@+id/text_id"
-            android:layout_width="300dp"
-            android:layout_height="200dp"
-            android:capitalize="characters"
-            android:text="GRE CHEATSHEET"
-            android:textColor="@android:color/holo_blue_dark"
-            android:textColorHighlight="@android:color/primary_text_dark"
-            android:textSize="30dp"
-            android:layout_marginRight="19dp" android:layout_marginEnd="19dp"
-            android:layout_alignBaseline="@+id/nextprev" android:layout_alignBottom="@+id/nextprev"
-            android:layout_alignParentRight="true" android:layout_alignParentEnd="true"/>
+        android:id="@+id/text_id"
+        android:layout_width="300dp"
+        android:layout_height="500dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="48dp"
+        android:capitalize="characters"
+        android:text="GRE CHEATSHEET"
+        android:textColor="@android:color/black"
+        android:textColorHighlight="@android:color/primary_text_dark"
+        android:textSize="30dp" />
+
     <Button
-            android:id="@+id/verbal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Verbal" android:layout_centerVertical="true" android:layout_centerHorizontal="true"/>
+        android:id="@+id/verbal"
+        android:layout_width="122dp"
+        android:layout_height="41dp"
+
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#929394"
+        android:shadowDx="0"
+        android:shadowDy="3"
+        android:shadowRadius="2"
+        android:text="Verbal"
+        android:textColor="#0A0404"
+        android:textSize="25sp" />
 
 
     <Button
-            android:id="@+id/quant"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Quantitative" android:layout_below="@+id/verbal" android:layout_centerHorizontal="true"
-            android:layout_marginTop="15dp"/>
+        android:id="@+id/quant"
+        android:layout_width="147dp"
+        android:layout_height="41dp"
+
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="148dp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#929394"
+        android:shadowDx="0"
+        android:shadowDy="3"
+        android:shadowRadius="2"
+        android:text="Quantitative"
+        android:textColor="#0A0404"
+        android:textSize="25sp" />
 
     <Button
-            android:id="@+id/nextprev"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="VerbalNextPrev" android:layout_above="@+id/verbal" android:layout_alignRight="@+id/text_id"
-            android:layout_alignEnd="@+id/text_id"/>
+        android:id="@+id/nextprev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/quant"
+        android:layout_alignRight="@+id/quant"
+        android:layout_below="@+id/verbal"
+        android:layout_marginTop="47dp"
+        android:text="VerbalNextPrev" />
 
 
 </RelativeLayout>

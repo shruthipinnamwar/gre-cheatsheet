@@ -9,8 +9,8 @@ import android.widget.Button;
 
 public class MainActivity extends Activity {
     Button button;
-    String[] mobileArray = {"Word1","Word2","Word3","Word4",
-            "Word5","Word6","Word7","Word8","Word9","Word10"};
+  //  String[] mobileArray = {"Word1","Word2","Word3","Word4",
+    //        "Word5","Word6","Word7","Word8","Word9","Word10"};
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -62,9 +62,9 @@ public class MainActivity extends Activity {
             public void onClick(View arg0) {
 
                 // Start NewActivity.class
-             //   Intent myIntent = new Intent(MainActivity.this,
-               //         NextprevActivity.class);
-                // startActivity(myIntent);
+                Intent myIntent = new Intent(MainActivity.this,
+                        NextprevActivity.class);
+                 startActivity(myIntent);
 
                 //  ArrayAdapter adapter = new ArrayAdapter<String>(this,
                 //   R.layout.activity_listview, mobileArray);
